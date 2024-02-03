@@ -2,7 +2,6 @@
 const getStock = async () => {
     const answer = await fetch("http://localhost:3000/stock");
     const data = await answer.json();
-    console.log(data);
 
     return data;
 }
@@ -10,7 +9,6 @@ const getStock = async () => {
 const getStockById = async (id) => {
     const answer = await fetch(`http://localhost:3000/stock/${id}`);
     const data = await answer.json();
-    console.log(data);
 
     return data;
 }
@@ -26,7 +24,6 @@ const registerStock = async (product) => {
         },
     } );
     const data = await answer.json();
-    console.log(data);
 
     return data;
 }
@@ -65,7 +62,6 @@ const deleteStock = async (id) => {
         },
     } );
     const data = await answer.json();
-    console.log(data);
 
     return data;
 }

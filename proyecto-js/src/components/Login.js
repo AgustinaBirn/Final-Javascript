@@ -20,7 +20,6 @@ export const Login = () => {
         console.log(email.value);
         console.log(password.value);
         const status = await usersManager.loginUser(email.value, password.value);
-        console.log(status);
 
         if(status){
             StockApp();

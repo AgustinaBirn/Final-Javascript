@@ -15,8 +15,6 @@ const showStock = async (productContainer) => {
 
     let stockDB = await stockApi.getStock();
     let stock = filteredProducts || stockDB;
-
-    console.log(stock);
     
     
     // recorrer el array stock y por cada elemento(producto) crea una tarjeta c/ sus elementos html

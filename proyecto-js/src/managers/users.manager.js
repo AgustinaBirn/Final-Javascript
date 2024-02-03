@@ -18,7 +18,6 @@ const lookingUserByEmail = async (email) => {
     // Buscar si el email está registrado en bd
     let user = users.find((user) => user.email === email);
     
-    console.log(user);
     return user
 }
 

@@ -3,7 +3,6 @@
 const getUsers = async () => {
     const answer = await fetch("http://localhost:3000/users");
     const data = await answer.json();
-    console.log(data);
 
     return data;
 }
@@ -18,7 +17,6 @@ const registerUser = async (user) => {
         },
     } );
     const data = await answer.json();
-    console.log(data);
 
     return data;
 
